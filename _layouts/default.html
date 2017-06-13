@@ -39,9 +39,31 @@
 
     <div class="wrapper-footer">
       <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-          <p>Eiduo © 2017. Todos los derechos reservados.</p>
+        <footer class="navigable black-trans">
+          <section class="col-md-4 col-sm-10 section-title">
+            <h3>Eiduo Agencia</h3>
+            <ul style="color: white; text-align: center; text-transform: uppercase;">
+              <li style="padding:20px; font-weight: 600;">Sevilla</li>-<li style="padding:20px; font-weight: 600;">Madrid</li>
+            </ul>
+            <p>Suscribete a nuestra newsletter, donde además de hablar de diseño y publicidad, también hay un hueco para los pajaritos.</p>
+          </section>
+          <div id="suscribir">
+            <div id="mensaje"></div>
+            <form method="post" action="php/enviar.php"></form>
+            <input type="email" name="correo" placeholder="Correo*" required>
+            <button id="boton" class="boton-send" type="submit" value="SUSCRIBIR">Suscribir</button>
+          </div>
+
+          <ul class="social">
+            <h5>Síguenos en nuestras redes sociales.</h5>
+            <a class="fb-btn" href="https://www.facebook.com/eiduoagencia/" target="_blank"></a>
+            <a class="li-btn" href="https://www.linkedin.com/company/agencia-creativa-eiduo/" target="_blank"></a>
+            <a class="tw-btn" href="https://twitter.com/eiduoagencia/" target="_blank"></a>
+            <a class="in-btn" href="https://instagram.com/eiduoagencia/" target="_blank"></a>
+          </ul>
+
+          <!--Botón para volver al header-->
+          <div class="back-top">Back top</div>
         </footer>
       </div>
     </div>
